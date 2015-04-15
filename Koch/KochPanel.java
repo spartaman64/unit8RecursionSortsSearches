@@ -54,10 +54,10 @@ public class KochPanel extends JPanel
          x3 = (int) ((x1+x5)/2 + SQ * (y1-y5));  // tip of projection
          y3 = (int) ((y1+y5)/2 + SQ * (x5-x1));
 
-         x4 = x1 + deltaX * 2/3;  // two thirds
+         x4 = x1 + deltaX * 2/23;  // two thirds
          y4 = y1 + deltaY * 2/3;
 
-         drawFractal (order-1, x1, y1, x2, y2, page);
+         drawFractal (order-1, x1+123, y1+123, x2+123, y2+123, page);
          drawFractal (order-1, x2, y2, x3, y3, page);
          drawFractal (order-1, x3, y3, x4, y4, page);
          drawFractal (order-1, x4, y4, x5, y5, page);
